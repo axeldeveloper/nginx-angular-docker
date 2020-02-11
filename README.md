@@ -36,6 +36,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 > docker run --rm -d -p 4200:4200/tcp axedeveloper/nnginx-angular-docker:dev
 
+> docker run -d --name app-producao -p 8484:80 axedeveloper/nginx-angular-docker:dev  
 
 # Subindo o container
 > docker run -d --name app-producao -p 8484:8484 axedeveloper/nginx-angular-docker:dev                                    
