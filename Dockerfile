@@ -3,8 +3,8 @@
 # base image 
 FROM node:12.2.0 AS build-node
 
-ENV http_proxy http://axbenites@fazenda:Axel@193@proxy.sgi.ms.gov.br:8081
-ENV https_proxy https://axbenites@fazenda:Axel@193@proxy.sgi.ms.gov.br:8081
+ENV http_proxy http://axbenites@fazenda:XXXXXXXXX@XXXXXXXXXXXX@proxy.sgo.mts.gov.br:8081
+ENV https_proxy https://axbenites@fazenda:XXXXXXXXX@XXXXXXXXXXXX@proxy.sgo.mts.gov.br:8081
 
 LABEL maintainer="axel_nomore@hotmail.com" Description="Image is used to  node 12 and amgular 7"
 
@@ -27,8 +27,7 @@ COPY package*.json ./
 #RUN npm install
 #RUN npm install -g @angular/cli@7.3.9
 
-#RUN yarn config set proxy http://axbenites@fazenda:Axel@193@proxy.sgi.ms.gov.br:8081
-#RUN yarn config set https-proxy https://axbenites@fazenda:Axel@193@proxy.sgi.ms.gov.br:8081
+
 
 # add app
 # COPY . /app
@@ -38,8 +37,8 @@ COPY ./ /usr/src/app/
 # ARG configuration=production
 
 #RUN npm install
-RUN yarn install --proxy http://axbenites@fazenda:Axel@193@proxy.sgi.ms.gov.br:8081
-# RUN yarn add --proxy http://axbenites@fazenda:Axel@193@proxy.sgi.ms.gov.br:8081 @angular/cli
+RUN yarn install --proxy http://axbenites@fazenda:XXXXXXXXX@XXXXXXXXXXXX@proxy.sgo.mts.gov.br:8081
+# RUN yarn add --proxy http://axbenites@fazenda:XXXXXXXXX@XXXXXXXXXXXX@proxy.sgo.mts.gov.br:8081 @angular/cli
 # RUN yarn install
 # RUN yarn global add @angular/cli
 
